@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cypher Training</title>
+  <link rel="icon" type="image/x-icon" href="assets/imgs/icon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+</head>
+
+<body>
+  <!-- Home Page -->
+  <div id="home-page" class="master-container">
+    <div class="middle-page-container">
+      <div class="left-container">
+        <ul class="index-container">
+          <li class="base-text main-text">MASTER</li>
+          <li class="base-text main-text">YOUR</li>
+          <li class="base-text main-text">SKILLS</li>
+        </ul>
+      </div>
+      <div class="center-container">
+        <h1><img src="assets/imgs/logo.svg"></h1>
+      </div>
+      <div class="right-container">
+        <ul class="index-container">
+          <li class="base-text main-text">LEAD</li>
+          <li class="base-text main-text">THE</li>
+          <li class="base-text main-text">GAME</li>
+        </ul>
+      </div>
+    </div>
+    <div class="button-container">
+      <button id="start-button" class="training-button-start base-text">TRAINING</button>
+    </div>
+  </div>
+  <!-- Choose Game -->
+  <div id="choose-game" class="master-container">
+    <div class="middle-page-container">
+      <div id="grid-shot" class="choose-game-container">
+        <h1 class="choose-game-image"><img src="assets/imgs/grid-shot.svg"></h1>
+        <h2 class="base-text choose-game-text">GRID SHOT</h2>
+      </div>
+    </div>
+  </div>
+  <!-- Select Time -->
+  <div id="select-time" class="master-container">
+    <div class="middle-page-container">
+      <div class="vertical-bar-container">
+        <div class="vertical-bar"></div>
+      </div>
+      <div class="mid-page-title">
+        <ul class="mid-page-title-container">
+          <li class="base-text main-text">SELECT</li>
+          <li class="base-text main-text">GAME</li>
+          <li class="base-text main-text">TIME</li>
+        </ul>
+      </div>
+      <div id="time-list">
+        <ul id="thirty-seconds" data-time="30" class="choose-time select-box">
+          <li class="title">30</li>
+          <li class="subtitle">Seconds</li>
+        </ul>
+        <ul id="forty-five-seconds" data-time="45" class="choose-time select-box">
+          <li class="title">45</li>
+          <li class="subtitle">Seconds</li>
+        </ul>
+        <ul id="sixty-seconds" data-time="60" class="choose-time select-box">
+          <li class="title">60</li>
+          <li class="subtitle">Seconds</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Select Crosshair -->
+  <div id="select-crosshair" class="master-container">
+    <div class="middle-page-container">
+      <div class="vertical-bar-container">
+        <div class="vertical-bar"></div>
+      </div>
+      <div class="mid-page-title">
+        <ul class="mid-page-title-container">
+          <li class="base-text main-text">SELECT</li>
+          <li class="base-text main-text">YOUR</li>
+          <li class="base-text main-text">CROSSHAIR</li>
+        </ul>
+      </div>
+      <div class="choose-container">
+        <div id="crosshair-list">
+          <ul id="open-crosshair" class="choose-crosshair select-box" crosshair-type="open">
+            <li class="menu-image"><img src="assets/imgs/open-ch-menu.svg"></li>
+            <li class="ch-title">Cross</li>
+            <li class="ch-subtitle">hair</li>
+          </ul>
+          <ul id="dot-crosshair" class="choose-crosshair select-box" crosshair-type="dot">
+            <li class="menu-image"><img src="assets/imgs/dot-ch-menu.svg"></li>
+            <li class="ch-title">Dot</li>
+            <li class="ch-subtitle">Crosshair</li>
+          </ul>
+          <ul id="dotted-crosshair" class="choose-crosshair select-box" crosshair-type="dotted">
+            <li class="menu-image"><img src="assets/imgs/dotted-ch-menu.svg"></li>
+            <li class="ch-title">Dotted</li>
+            <li class="ch-subtitle">Crosshair</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Play Grid Shot -->
+  <div id="hide-grid">
+    <div id="grid-shot" class="master-container color">
+      <div class="game-area-container">
+        <div class="upper-board-container">
+          <span id="timer-board" class="game-title">00:00</span>
+          <span id="point-board" class="game-subtitle">00000</span>
+        </div>
+        <div id="game-area" class="playable-container">
+          <div class="pre-game-container">
+            <span id="pre-game" class="pre-game-title"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Statistics -->
+  <div id="statistics" class="master-container">
+    <div class="statistics-full-page-container">
+      <div class="page-title">
+        <ul class="page-title-container">
+          <li class="stats-top-title">THE</li>
+          <li class="stats-top-title">CYPHER</li>
+          <li class="stats-top-title">TRAINING</li>
+        </ul>
+      </div>
+      <div class="statistics-middle-page-container">
+        <div class="vertical-bar-container">
+          <div class="stats-vertical-bar"></div>
+        </div>
+        <div class="mid-page-title">
+          <ul class="mid-page-title-container">
+            <li class="stats-title">STATISTICS</li>
+          </ul>
+        </div>
+        <div class="stats-column-title-container">
+          <ul class="mid-page-title-container">
+            <li class="stats-column-title">TIME</li>
+            <li class="stats-column-title">POINTS</li>
+            <li class="stats-column-title">TARGETS</li>
+            <li class="stats-column-title">ACCURACY</li>
+            <li class="stats-column-title">AVERAGE SPEED</li>
+            <li class="stats-column-title">MISSED TARGETS</li>
+          </ul>
+        </div>
+        <div class="stats-column-title-container">
+          <ul class="mid-page-title-container">
+            <li id="timer" class="stats-column-content">00:00s</li>
+            <li id="points" class="stats-column-content">00000</li>
+            <li id="targets" class="stats-column-content">00</li>
+            <li id="accuracy" class="stats-column-content">00.00%</li>
+            <li id="average-speed" class="stats-column-content">000ms</li>
+            <li id="missed-targets" class="stats-column-content">00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="play-again" class="training-button-start base-text">PLAY AGAIN</button>
+      </div>
+    </div>
+  </div>
+  <!-- Script JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
